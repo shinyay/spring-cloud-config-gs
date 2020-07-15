@@ -6,6 +6,14 @@
 ### Dependencies
 - spring-cloud-config-server
 
+### Enable Config Server
+Add annotation `@EnableConfigServer`
+
+```kotlin
+@SpringBootApplication
+@EnableConfigServer
+class SpringCloudConfigGsApplication
+```
 ## Demo
 
 ## Features
