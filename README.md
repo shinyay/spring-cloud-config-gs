@@ -1,8 +1,10 @@
-# Name
+# Spring Cloud Config Getting Started
 
-Overview
+**Spring** Cloud Config is Spring's client/server approach for storing and serving distributed configurations across multiple applications and environments.
 
 ## Description
+### Dependencies
+- spring-cloud-config-server
 
 ## Demo
 
