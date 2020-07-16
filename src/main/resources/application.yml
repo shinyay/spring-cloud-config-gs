@@ -5,5 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/shinyay/spring-cloud-config-gs/repos
+          uri: https://github.com/shinyay/spring-cloud-config-gs.git
+          clone-on-start: true
+          search-paths: repos
           skip-ssl-validation: true
