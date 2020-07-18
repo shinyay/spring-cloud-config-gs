@@ -24,7 +24,7 @@ class SpringCloudConfigGsApplication
 |uri|Git Repository URI <br> - https://github.com/... <br> - file://${user.home}/...|
 |search-paths|sub-directories where config stores <br> - config-repo <br> - foo,bar*|
 |clone-on-start|Whether the Config Server should clone the default repository when it starts up|
-|||
+|skip-ssl-validation|validation of the Git server’s SSL certificate can be disabled|
 |||
 
 ## Demo
