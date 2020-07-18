@@ -14,6 +14,19 @@ Add annotation `@EnableConfigServer`
 @EnableConfigServer
 class SpringCloudConfigGsApplication
 ```
+
+### application.yml
+
+- `spring.cloud.config.server.git`
+
+|property|content|
+|--------|-------|
+|uri|Git Repository URI <br> https://github.com/... <br> file://${user.home}/...|
+|||
+|||
+|||
+|||
+
 ## Demo
 
 ## Features
