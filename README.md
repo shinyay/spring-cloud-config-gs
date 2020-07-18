@@ -21,8 +21,8 @@ class SpringCloudConfigGsApplication
 
 |property|content|
 |--------|-------|
-|uri|Git Repository URI <br> https://github.com/... <br> file://${user.home}/...|
-|||
+|uri|Git Repository URI <br> - https://github.com/... <br> - file://${user.home}/...|
+|search-paths|sub-directories where config stores <br> - config-repo <br> - foo,bar*|
 |||
 |||
 |||
