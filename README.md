@@ -25,9 +25,26 @@ class SpringCloudConfigGsApplication
 |search-paths|sub-directories where config stores <br> - config-repo <br> - foo,bar*|
 |clone-on-start|Whether the Config Server should clone the default repository when it starts up|
 |skip-ssl-validation|validation of the Git server’s SSL certificate can be disabled|
-|||
 
 ## Demo
+### 1. Create Remote Repository
+Create a remote repository on GitHub and a directory to store properties by indicating the following:
+
+- `spring.cloud.config.server.git.uri`
+- `spring.cloud.config.server.git.search-paths`
+
+### 2. Store property files
+
+- `application` is defined by `spring.application.name` in Config Client App
+- `profile` is defined by `spring.cloud.config.profile` in Config Client App
+- `label` is an optional git label (default is `master`) defined by `spring.cloud.config.label` in Config Client App
+
+Property files can be named and located as follows:
+- /{application}/{profile}[/{label}]
+- /{application}-{profile}.yml
+- /{label}/{application}-{profile}.yml
+- /{application}-{profile}.properties
+- /{label}/{application}-{profile}.properties
 
 ## Features
 
