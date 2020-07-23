@@ -4,3 +4,10 @@ spring:
       discovery:
         locator:
           enabled: true
+      routes:
+        - id: loadbalancer
+          uri: lb://loadbalancer
+          predicates:
+            - Path=/myapp/**
+          filters:
+            - RewritePath=/myapp/(?<path>.*), /$\{path}
