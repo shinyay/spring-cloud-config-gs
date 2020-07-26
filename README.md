@@ -6,6 +6,14 @@
 ### Dependencies
 - spring-cloud-config-server
 
+### Related Repository
+
+- https://github.com/shinyay/spring-cloud-getting-started
+- https://github.com/shinyay/spring-cloud-gateway-gs
+- https://github.com/shinyay/spring-cloud-loadbalancer-gs
+- https://github.com/shinyay/spring-cloud-eureka-server-gs
+- https://github.com/shinyay/spring-cloud-config-client-gs
+
 ### Enable Config Server
 Add annotation `@EnableConfigServer`
 
