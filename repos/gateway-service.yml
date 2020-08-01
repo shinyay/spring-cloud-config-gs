@@ -9,18 +9,18 @@ spring:
           uri: lb://loadbalancer
           predicates:
             - Path=/myapp/**
-            - Weight=group1, 4
+            - Weight=groupApp, 4
         - id: loadbalancer_2
           uri: lb://loadbalancer
           predicates:
             - Path=/myapp/**
-            - Weight=group1, 3
+            - Weight=groupApp, 3
           filters:
             - RewritePath=/myapp, /myapp2
         - id: loadbalancer_3
           uri: lb://loadbalancer
           predicates:
             - Path=/myapp/**
-            - Weight=group1, 3
+            - Weight=groupApp, 3
           filters:
             - RewritePath=/myapp, /myapp3
