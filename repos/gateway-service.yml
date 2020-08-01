@@ -5,9 +5,24 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: loadbalancer
+        - id: loadbalancer_1
           uri: lb://loadbalancer
           predicates:
             - Path=/myapp/**
+            - Weight=group1, 4
           filters:
             - RewritePath=/myapp/(?<path>.*), /$\{path}
+        - id: loadbalancer_2
+          uri: lb://loadbalancer
+          predicates:
+            - Path=/myapp/**
+            - Weight=group1, 3
+          filters:
+            - RewritePath=/myapp2/(?<path>.*), /$\{path}
+        - id: loadbalancer_3
+          uri: lb://loadbalancer
+          predicates:
+            - Path=/myapp/**
+            - Weight=group1, 3
+          filters:
+            - RewritePath=/myapp3/(?<path>.*), /$\{path}
